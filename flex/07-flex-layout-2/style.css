@@ -12,7 +12,7 @@ body {
 
 .footer {
   height: 72px;
-  background: #eee;
+  background: rgb(146, 145, 145);
   color: darkmagenta;
 }
 
@@ -25,4 +25,70 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+
+
+
+
+/* solution */
+
+body{
+  display:flex;
+  flex-direction: column;
+}
+
+.content{
+  display:flex;
+  gap:35px;
+}
+
+.footer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.header{
+  display:flex;
+  align-items: center;
+  padding-left:20px;
+  font-size:32px;
+  font-weight:bold;
+}
+
+.card{
+  max-width:380px;
+  height: 400px;
+  margin: 40px 0px;
+  padding:20px;
+}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:35px;
+}
+
+ul{
+  list-style-type:none;
+  padding:0;
+}
+
+ul li{
+  padding:8px 16px;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+.sidebar{
+  flex-basis:300px;
+  flex-shrink:0;
+  display:flex;
+  flex-direction: column;
+  font-size:24px;
 }
